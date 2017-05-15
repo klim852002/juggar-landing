@@ -18,7 +18,7 @@ h4,
 h5,
 h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .topnav {
@@ -34,11 +34,11 @@ h6 {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: left;
-    color: #505050;
+    color: #3f73e0;
     background: url(../img/piggy.jpg) no-repeat center center;
     background-size: cover;
 }
-
+/*#3f73e0*/
 .intro-message {
     position: relative;
     padding-top: 20%;
@@ -147,6 +147,14 @@ h6 {
     margin-top: 0;
 }
 
+.card-text h4{
+  margin: 40px auto !important;
+  text-align: center;
+}
+
+.caption h1 {
+  text-align: center;
+}
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         float: left;
