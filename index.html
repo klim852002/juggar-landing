@@ -34,7 +34,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top  navbar-inverse topnav" role="navigation">
+    <nav class="navbar transparent navbar-inverse navbar-fixed-top  topnav" style="background-color:transparent"; role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -98,9 +98,9 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h3 class="section-heading">Juggar allows depositors to lend their money to borrowers who pledge
+                    <h3 class="section-heading">Juggar allows lenders to lend their money to borrowers who pledge
                     shares of Singapore listed companies as collateral. </br></br>
-                    This means you, as the depositor, takes on less risk</h3>
+                    This means you, as the lender, takes on less risk</h3>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/ipad.png" alt="">
@@ -132,7 +132,7 @@
               <i class="fa fa-university fa-4x" aria-hidden="true"></i>
               <div class="card-text">
                 <h1>Safe</h1>
-                <h4>Borrowers are required to pledge shares of Singapore-listed companies as collateral and this provides protection for depositors</h4>
+                <h4>Borrowers are required to pledge shares of Singapore-listed companies as collateral and this provides protection for you</h4>
               </div>
             </div>
           </div>
@@ -195,12 +195,14 @@
                     <p id="signup-success" class="text-success"></p>
                     <p id="signup-error" class="text-danger"></p>
                     <form class="signup-form form-inline" id="signup-form" role="form" onsubmit="return signup(this)">
-                        <input class="form-control" name="email" type="email" placeholder="Your email" required>
-                        <button class="btn btn-success" id="signup-button" type="submit" >Tell me more</button>
+                        <input class="form-control"
+                        style="width:50%" name="email" type="email" placeholder="Your email" required>
+                        <button class="btn btn-large"
+                        style="background-color:#3f73e0" id="signup-button" type="submit" >Tell me more</button>
                     </form>
                   </div>
                 </div>
-                <div class="col-lg-4">
+                <!-- <div class="col-lg-4">
                     <ul class="list-inline banner-social-buttons">
                         <li>
                             <a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
@@ -209,7 +211,7 @@
                             <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
 
         </div>
@@ -232,9 +234,6 @@
                             <a href="#about">About</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
                             <a href="#contact">Contact</a>
@@ -294,6 +293,22 @@
 
       <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script>
+    function checkScroll(){
+      var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+      if($(window).scrollTop() > startY){
+          $('.navbar').addClass("scrolled");
+      }else{
+          $('.navbar').removeClass("scrolled");
+        }
+    }
+    if($('.navbar').length > 0){
+        $(window).on("scroll load resize", function(){
+            checkScroll();
+        });
+      }
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
