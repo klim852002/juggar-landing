@@ -49,8 +49,13 @@ h6 {
 }
 
 .navbar.scrolled {
+    opacity: 0.95;
     background: #3f73e0 !important; //IE
     background: rgba(#3f73e0, 0.78) !important; //NON-IE
+}
+
+body > div:nth-child(5) > div > div > div:nth-child(1) > h3 {
+  margin-right: -8%;
 }
 
 .lead {
