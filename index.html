@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="a p2p crowdlending platform for matching borrowers to lenders directly. Loans are collaterised by Singapore-listed shares.">
     <meta name="author" content="">
 
-    <title>Juggar</title>
+    <title>Juggar Crowdlending</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -90,7 +90,7 @@
 
     <!-- Page Content -->
 
-	<a  name=""></a>
+	<a  name="learn-more"></a>
     <div class="content-section-b">
 
         <div class="container">
@@ -150,7 +150,7 @@
       </div>
     </div>
 
-  <a  name="learn-more"></a>
+  <!-- <a  name="learn-more"></a>
     <div class="content-section-b">
         <div class="container">
           <div class="row">
@@ -178,14 +178,25 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- /.container -->
-    </div>
+    <!-- </div> -->
     <!-- /.content-section-b -->
+  <div class='content-section-b'>
+    <div class ="row">
+      <div class='intro-video' style="text-align: center;">
+        <h1>How Juggar Works?</h1>
+        <div class="col-md-10 col-md-offset-1">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Lw_cpYNCeuQ" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.content-section-b -->
 
-    <!-- <div style="text-align: center;">
-      <iframe width="924" height="521" src="https://www.youtube.com/embed/8inJtTG_DuU" frameborder="0" allowfullscreen style="margin: 50px auto"></iframe>
-    </div> -->
 	<a  name="contact"></a>
     <div class="banner">
         <div class="container">
@@ -207,7 +218,7 @@
 
                     <textarea class="form-control" style="width:70%; margin-top: 20px" name="question" rows="5" placeholder="or, if you have any queries, let us answer it."></textarea>
                     <button class="btn btn-large"
-                    style="background-color:#3f73e0; width:30%; margin-top:20px;" id="signup-button" type="submit" >Join Waitlist</button>
+                    style="background-color:#3f73e0; width: 70%; margin-top:20px;" id="signup-button" type="submit" >Join Waitlist</button>
                 </form>
               </div>
             </div>
@@ -317,6 +328,14 @@
             checkScroll();
         });
       }
+
+    $(function() {
+      $('.nav a').on('click', function(){
+          if($('.navbar-toggle').css('display') !='none'){
+              $(".navbar-toggle").trigger( "click" );
+          }
+      });
+    });
     </script>
 
     <!-- Bootstrap Core JavaScript -->
