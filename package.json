@@ -1,0 +1,19 @@
+{
+  "name": "juggar-landing",
+  "version": "1.0.0",
+  "description": "Juggar landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klim852002/juggar-landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klim852002/juggar-landing/issues"
+  },
+  "homepage": "https://github.com/klim852002/juggar-landing#readme"
+}
