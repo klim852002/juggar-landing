@@ -18,7 +18,7 @@
   <body>
     <div class="container">
 
-      <button class="btn btn-large" data-spy="affix" data-offset-top="197" onclick="goBack()" style="background-color:#3f73e0;" >Go Back</button>
+      <button class="btn btn-large pull-left transform" data-spy="affix" data-offset-top="100" onclick="goBack()" style="background-color:#3f73e0; color:white;">Go Back</button>
 
       <div class="page-header">
         <h1>Frequently Asked Questions</h1>
@@ -36,8 +36,10 @@
             </div>
             <div id="collapse1" class="panel-collapse collapse">
               <div class="panel-body">
-                <p>Juggar is a crowdlending platform that brings Lenders and Borrowers together. Borrowers will need to pledge at least a 30%1 collateral with cash or shares of Singapore-listed companies as collateral to safeguard the interest of the lenders. </br></br>
-                Juggar is currently in development and is expected to launch in 2018.</p>
+                <p>Juggar is a crowdlending platform that brings Lenders and Borrowers together. Borrowers will need to pledge at least a 30%<sup>1</sup> collateral with cash or shares of Singapore-listed companies as collateral to safeguard the interest of the lenders. </br></br>
+                Juggar is currently in development and is expected to launch in 2018.</p></br>
+
+                <p><sup>1</sup>see illustration under Investor section.</p>
               </div>
             </div>
           </div>
@@ -106,12 +108,51 @@
             <div class="panel-heading">
               <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="panel-title expand">
                 <div class="right-arrow pull-right">+</div>
-                <a href="#">AHow are Lenders protected?</a>
+                <a href="#">How are Lenders protected?</a>
               </h4>
             </div>
             <div id="collapse5" class="panel-collapse collapse">
               <div class="panel-body">
                 <p>Borrowers are required to pledge at least a 30% collateral with cash or shares of Singapore listed companies. This roughly translate to 140% of loan amount (also known as margin ratio) which the borrowers have to maintain. That is to say if the price of these shares drop, Borrowers will have to top-up the difference with cash. Below is an example to illustrate:</p>
+                <div class="col-md-8 col-md-offset-2">
+                  <table class="table table-sm table-responsive">
+                    <thead>
+                      <tr>
+                        <th>Illustration</th>
+                        <th>Amount</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Value of Collateral (shares or cash pledged)</th>
+                        <td>= $30</td>
+                      </tr>
+                      <tr>
+                        <td>Amount of loan</th>
+                        <td>= $70</td>
+                      </tr>
+                      <tr>
+                        <td>Total value of shares:</br>
+                        Value of Collateral + Amount of Loan ($30 + $70)
+                        </th>
+                        <td>= $100</td>
+                      </tr>
+                      <tr>
+                        <td>Collateralized portion:</br>
+                        Value of Collateral ÷ Total value of shares ($30 ÷ $100)
+                        </th>
+                        <td>= 30%</td>
+                      </tr>
+                      <tr>
+                        <td>Margin Ratio:</br>
+                        Total value of share ÷ Amount of Loan ($100 ÷ $70)
+                        </th>
+                        <td>≈ 140%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -131,27 +172,162 @@
             </div>
           </div>
 <!-- End of question -->
-        </div>
-<!-- End of section -->
-        <div class="section-header">
-          <h2>General</h2>
+<!-- Question 7 -->
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="panel-title expand">
+              <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse7" class="panel-title expand">
                 <div class="right-arrow pull-right">+</div>
-                <a href="#">Collapsible Group 3</a>
+                <a href="#">What shares can Borrowers pledge? </a>
               </h4>
             </div>
-            <div id="collapse3" class="panel-collapse collapse">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <div id="collapse7" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Borrowers can pledge marginable shares determined by Juggar. The criteria for shortlisting of the shares will be dependent on the volatility, market capitalization and trading volume of the shares. In simpler terms, those deemed less risky are more likely to be on the list.</p>
               </div>
             </div>
           </div>
+<!-- End of question -->
+<!-- Question 8 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse8" class="panel-title expand">
+                <div class="right-arrow pull-right">+</div>
+                <a href="#">How safe is this 140% collateral? </a>
+              </h4>
+            </div>
+            <div id="collapse8" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Looking back at the Singapore stock market (Straits Time Index) as an indicator over the last 30 years, it has not fallen below 100% level such that the Lender will lose money.</br></br>The price performance of individual stocks within the Straits Time Index shows the same conclusion over the past 20 years.</p>
+              </div>
+            </div>
+          </div>
+<!-- End of question -->
+<!-- Question 9 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse9" class="panel-title expand">
+                <div class="right-arrow pull-right">+</div>
+                <a href="#">Who will monitor the share price and ensure the Borrowers top-up with cash?</a>
+              </h4>
+            </div>
+            <div id="collapse9" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Juggar will administer the collateral and monitor the share price on behalf of the Lenders. This means we will do the margin calls and force-selling if necessary.</p>
+              </div>
+            </div>
+          </div>
+<!-- End of question -->
+<!-- Question 10 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse10" class="panel-title expand">
+                <div class="right-arrow pull-right">+</div>
+                <a href="#">What happen if the share price drops such that the total value of shares is below the loan value?</a>
+              </h4>
+            </div>
+            <div id="collapse10" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>In the unfortunate event that this happens, the Borrower is still obliged to repay the full loan amount plus agreed interest to the Lender.</p>
+              </div>
+            </div>
+          </div>
+<!-- End of question -->
+<!-- Question 11 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse11" class="panel-title expand">
+                <div class="right-arrow pull-right">+</div>
+                <a href="#">How long is the tenure of the loan?</a>
+              </h4>
+            </div>
+            <div id="collapse11" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>We are envisioning the tenure to be between 1 and 12 months.</p>
+              </div>
+            </div>
+          </div>
+<!-- End of question -->
+<!-- Question 12 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse12" class="panel-title expand">
+                <div class="right-arrow pull-right">+</div>
+                <a href="#">Can I withdraw early?</a>
+              </h4>
+            </div>
+            <div id="collapse12" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>No, money will only be repaid by the Borrowers at the end of the tenure. So chose your tenure wisely.</p>
+              </div>
+            </div>
+          </div>
+<!-- End of question -->
+<!-- Question 13 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse13" class="panel-title expand">
+                <div class="right-arrow pull-right">+</div>
+                <a href="#">How much returns can I expect?</a>
+              </h4>
+            </div>
+            <div id="collapse13" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Currently, the rates for fixed deposit is around 1.25% and the borrowing rates for Borrowers is around 3%. We envision the interest rates to be in between these two rates.</p>
+              </div>
+            </div>
+          </div>
+<!-- End of question -->
+<!-- Question 14 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse14" class="panel-title expand">
+                <div class="right-arrow pull-right">+</div>
+                <a href="#">Do I have to deposit my funds into Juggar first?</a>
+              </h4>
+            </div>
+            <div id="collapse14" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Yes, before Lenders can participate in the lending, funds have to be deposited with Juggar first so as to ensure the certainty of the funds to the borrowers upon a successful match.</p>
+              </div>
+            </div>
+          </div>
+<!-- End of question -->
+<!-- Question 14 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse14" class="panel-title expand">
+                <div class="right-arrow pull-right">+</div>
+                <a href="#">How can juggar ensure my deposited funds are safe until a match is being found?</a>
+              </h4>
+            </div>
+            <div id="collapse14" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Lenders will deposit their funds with a MAS regulated escrow agent.</p>
+              </div>
+            </div>
+          </div>
+<!-- End of question -->
+<!-- Question 15 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse15" class="panel-title expand">
+                <div class="right-arrow pull-right">+</div>
+                <a href="#">Is juggar licensed by MAS?</a>
+              </h4>
+            </div>
+            <div id="collapse15" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>As Juggar is still in development stage, we are still working towards getting the required licenses from MAS.</p>
+              </div>
+            </div>
+          </div>
+<!-- End of question -->
         </div>
+<!-- End of section -->
       </div>
+<!-- End of panel -->
     </div>
+<!-- End of container -->
     <!-- Jquery -->
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"

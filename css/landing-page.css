@@ -258,3 +258,8 @@ p.copyright {
 .affix {
     top: 20px;
   }
+
+@media screen and (min-width: 1280px) {
+    .transform {
+      transform:translateX(-120%);
+}
