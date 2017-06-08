@@ -10,7 +10,9 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="css/landing-page.css">
+    <!-- Custom CSS -->
+    <link rel="preload" href="css/landing-page.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/landing-page.css"></noscript>
 
     <link rel="shortcut icon" href="img/juggar-favicon.ico" type="image/x-icon">
   </head>
@@ -330,12 +332,14 @@
 <!-- End of container -->
     <!-- Jquery -->
     <script
-    async
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script
+    async
+    src="js/bootstrap.min.js"></script>
+
     <script async>$(function() {
       $(".expand").on( "click", function() {
         // $(this).next().slideToggle(200);
