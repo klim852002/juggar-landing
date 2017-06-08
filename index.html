@@ -369,11 +369,14 @@
       };
       firebase.initializeApp(config);
     </script> -->
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
   <!-- store email to firebase -->
   <!-- firebase javascript -->
-  <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+  <script async src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
 
-  <script>
+  <script async>
     var signupForm = document.getElementById('signup-form');
     var signupSuccess = document.getElementById('signup-success');
     var signupError = document.getElementById('signup-error');
@@ -405,8 +408,8 @@
   </script>
 
   <!-- jQuery -->
-  <script src="js/jquery.js"></script>
-  <script>
+  <script async src="js/jquery.js"></script>
+  <script async>
     function checkScroll() {
       var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
 
@@ -430,9 +433,6 @@
       });
     });
   </script>
-
-  <!-- Bootstrap Core JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
