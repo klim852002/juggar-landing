@@ -12,8 +12,8 @@
   <title>Juggar Crowdlending</title>
 
   <!-- Bootstrap Core CSS -->
-  <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript> -->
 
   <!-- Custom CSS -->
   <link rel="preload" href="css/landing-page.css" as="style" onload="this.rel='stylesheet'">
@@ -372,6 +372,8 @@
 
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
+  <!-- jQuery -->
+  <script async src="js/jquery.js"></script>
   <!-- store email to firebase -->
   <!-- firebase javascript -->
   <script async src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
@@ -406,9 +408,6 @@
       return false;
     };
   </script>
-
-  <!-- jQuery -->
-  <script async src="js/jquery.js"></script>
   <script async>
     function checkScroll() {
       var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
