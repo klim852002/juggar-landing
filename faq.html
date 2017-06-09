@@ -331,32 +331,16 @@
     </div>
 <!-- End of container -->
     <!-- Jquery -->
-    <script
+    <script defer
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
     <!-- Bootstrap Core JavaScript -->
     <script
-    async
+    defer
     src="js/bootstrap.min.js"></script>
-
-    <script async>$(function() {
-      $(".expand").on( "click", function() {
-        // $(this).next().slideToggle(200);
-        $expand = $(this).find(">:first-child");
-
-        if($expand.text() == "+") {
-          $expand.text("-");
-        } else {
-          $expand.text("+");
-        }
-      });
-    });
-
-    function goBack() {
-        // window.history.back();
-        location.href='/index.html';
-    };
-    </script>
+    <script
+    defer
+    src="js/faq.js"></script>
   </body>
 </html>

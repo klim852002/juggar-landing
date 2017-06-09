@@ -371,14 +371,14 @@
     </script> -->
 
   <!-- jQuery -->
-  <script src="js/jquery.js"></script>
+  <script defer src="js/jquery.js"></script>
   <!-- Bootstrap Core JavaScript -->
-  <script async="js/bootstrap.min.js"></script>
+  <script defer src="js/bootstrap.min.js"></script>
   <!-- store email to firebase -->
   <!-- firebase javascript -->
-  <script async src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+  <script defer src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
 
-  <script async>
+  <!-- <script defer>
     var signupForm = document.getElementById('signup-form');
     var signupSuccess = document.getElementById('signup-success');
     var signupError = document.getElementById('signup-error');
@@ -407,31 +407,8 @@
       signupBtn.disabled = true;
       return false;
     };
-  </script>
-  <script async>
-    function checkScroll() {
-      var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
-
-      if ($(window).scrollTop() > startY) {
-        $('.navbar').addClass("scrolled");
-      } else {
-        $('.navbar').removeClass("scrolled");
-      }
-    }
-    if ($('.navbar').length > 0) {
-      $(window).on("scroll load resize", function() {
-        checkScroll();
-      });
-    }
-
-    $(function() {
-      $('.nav a').on('click', function() {
-        if ($('.navbar-toggle').css('display') != 'none') {
-          $(".navbar-toggle").trigger("click");
-        }
-      });
-    });
-  </script>
+  </script> -->
+  <script defer src="js/index.js"></script>
 </body>
 
 </html>
