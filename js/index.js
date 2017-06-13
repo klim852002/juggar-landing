@@ -14,11 +14,12 @@ var onSignupComplete = function(error) {
 };
 
 function signup(formObj) {
-  // Store emails to firebase
+  // Store emails to firebases
   var myFirebaseRef = new Firebase("https://landing-on-juggar.firebaseio.com/signups");
   myFirebaseRef.push({
     email: formObj.email.value,
     question: formObj.question.value,
+    timestamp: Firebase.ServerValue.TIMESTAMP
 
   }, onSignupComplete);
   console.log(formObj.email.value)
