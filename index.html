@@ -309,7 +309,8 @@
 
               <input class="form-control" style="width:70%" name="email" type="email" placeholder="Enter email" required>
               <textarea class="form-control" style="width:70%; margin-top: 20px" name="question" rows="5" placeholder="or, if you have any queries, let us answer it."></textarea>
-              <button class="btn btn-large" style="background-color:#3f73e0; width: 70%; margin-top:20px;" id="signup-button" type="submit">Join Waitlist</button>
+              <button onclick="goog_report_conversion('http://juggar.co')" href="http://juggar.co"
+              class="btn btn-large" style="background-color:#3f73e0; width: 70%; margin-top:20px;" id="signup-button" type="submit">Join Waitlist</button>
             </form>
           </div>
         </div>
@@ -331,7 +332,7 @@
   <!-- /.banner -->
 
   <!-- Footer -->
-  <footer>
+  <!-- <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -339,20 +340,20 @@
             <li>
               <a href="#">Home</a>
             </li>
-            <!-- <li class="footer-menu-divider">&sdot;</li>
+            <li class="footer-menu-divider">&sdot;</li>
             <li>
               <a href="#about">About</a>
             </li>
             <li class="footer-menu-divider">&sdot;</li>
             <li>
               <a href="#contact">Contact</a>
-            </li> -->
+            </li>
           </ul>
           <p class="copyright text-muted small">Copyright &copy; Juggar 2017. All Rights Reserved</p>
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- firebase  -->
   <!-- <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script> -->
@@ -408,6 +409,38 @@
     };
   </script> -->
   <script defer src="js/index.js"></script>
+  <!-- Google Code for Adwords stage 1 Conversion Page
+  In your html page, add the snippet and call
+  goog_report_conversion when someone clicks on the
+  chosen link or button. -->
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    goog_snippet_vars = function() {
+      var w = window;
+      w.google_conversion_id = 858235246;
+      w.google_conversion_label = "ewDhCMb2pnIQ7sKemQM";
+      w.google_remarketing_only = false;
+    }
+    // DO NOT CHANGE THE CODE BELOW.
+    goog_report_conversion = function(url) {
+      goog_snippet_vars();
+      window.google_conversion_format = "3";
+      var opt = new Object();
+      opt.onload_callback = function() {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    }
+    var conv_handler = window['google_trackConversion'];
+    if (typeof(conv_handler) == 'function') {
+      conv_handler(opt);
+    }
+  }
+  /* ]]> */
+  </script>
+  <script type="text/javascript"
+    src="//www.googleadservices.com/pagead/conversion_async.js">
+  </script>
 </body>
 
 </html>
