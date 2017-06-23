@@ -309,22 +309,10 @@
 
               <input class="form-control" style="width:70%" name="email" type="email" placeholder="Enter email" required>
               <textarea class="form-control" style="width:70%; margin-top: 20px" name="question" rows="5" placeholder="or, if you have any queries, let us answer it."></textarea>
-              <!-- <button onclick="goog_report_conversion('http://juggar.co')" href="http://juggar.co"
-              class="btn btn-large" style="background-color:#3f73e0; width: 70%; margin-top:20px;" id="signup-button" type="submit">Join Waitlist</button> -->
               <button class="btn btn-large" style="background-color:#3f73e0; width: 70%; margin-top:20px;" id="signup-button" type="submit">Join Waitlist</button>
             </form>
           </div>
         </div>
-        <!-- <div class="col-lg-4">
-                  <ul class="list-inline banner-social-buttons">
-                      <li>
-                          <a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                      </li>
-                      <li>
-                          <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                      </li>
-                  </ul>
-              </div> -->
       </div>
     </div>
     <!-- /.container -->
@@ -333,43 +321,8 @@
   <!-- /.banner -->
 
   <!-- Footer -->
-  <!-- <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="list-inline">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li class="footer-menu-divider">&sdot;</li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li class="footer-menu-divider">&sdot;</li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-          <p class="copyright text-muted small">Copyright &copy; Juggar 2017. All Rights Reserved</p>
-        </div>
-      </div>
-    </div>
-  </footer> -->
-
-  <!-- firebase  -->
-  <!-- <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script> -->
-  <!-- <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDGhjSRgpHMqG3EOaT5pFfaLTydsiULEp0",
-        authDomain: "landing-on-juggar.firebaseapp.com",
-        databaseURL: "https://landing-on-juggar.firebaseio.com",
-        projectId: "landing-on-juggar",
-        storageBucket: "landing-on-juggar.appspot.com",
-        messagingSenderId: "1025568607647"
-      };
-      firebase.initializeApp(config);
-    </script> -->
+  <footer>
+  </footer>
 
   <!-- jQuery -->
   <script defer src="js/jquery.js"></script>
@@ -379,69 +332,20 @@
   <!-- firebase javascript -->
   <script defer src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
 
-  <!-- <script defer>
-    var signupForm = document.getElementById('signup-form');
-    var signupSuccess = document.getElementById('signup-success');
-    var signupError = document.getElementById('signup-error');
-    var signupBtn = document.getElementById('signup-button');
-    var onSignupComplete = function(error) {
-      signupBtn.disabled = false;
-      if (error) {
-        signupError.innerHTML = 'Sorry. Could not signup.';
-      } else {
-        signupSuccess.innerHTML = 'Thanks for signing up!';
-        // hide the form
-        signupForm.style.display = 'none';
-      }
-    };
-
-    function signup(formObj) {
-      // Store emails to firebase
-      var myFirebaseRef = new Firebase("https://landing-on-juggar.firebaseio.com/signups");
-      myFirebaseRef.push({
-        email: formObj.email.value,
-        question: formObj.question.value,
-
-      }, onSignupComplete);
-      console.log(formObj.email.value)
-      console.log(formObj.question.value)
-      signupBtn.disabled = true;
-      return false;
-    };
-  </script> -->
   <script defer src="js/index.js"></script>
-  <!-- Google Code for Adwords stage 1 Conversion Page
-  In your html page, add the snippet and call
-  goog_report_conversion when someone clicks on the
-  chosen link or button. -->
-  <!-- <script type="text/javascript">
-    /* <![CDATA[ */
-    goog_snippet_vars = function() {
-      var w = window;
-      w.google_conversion_id = 858235246;
-      w.google_conversion_label = "ewDhCMb2pnIQ7sKemQM";
-      w.google_remarketing_only = false;
-    }
-    // DO NOT CHANGE THE CODE BELOW.
-    goog_report_conversion = function(url) {
-      goog_snippet_vars();
-      window.google_conversion_format = "3";
-      var opt = new Object();
-      opt.onload_callback = function() {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
+  <script>
+  var x = 0;
+  var myVar = setInterval(function(){
+    if(x == 0){
+      if(jQuery('.text-success:contains("Thanks for signing up!")').is(":visible") == true)
+      {
+         (new Image()).src='//www.googleadservices.com/pagead/conversion/858235246/?label=ewDhCMb2pnIQ7sKemQM&guid=ON&script=0';
+          clearInterval(myVar);
+          x = 1;
       }
     }
-    var conv_handler = window['google_trackConversion'];
-    if (typeof(conv_handler) == 'function') {
-      conv_handler(opt);
-    }
-  }
-  /* ]]> */
+  }, 1000);
   </script>
-  <script type="text/javascript"
-    src="//www.googleadservices.com/pagead/conversion_async.js">
-  </script> -->
 </body>
 
 </html>
