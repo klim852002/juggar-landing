@@ -221,28 +221,36 @@
 
   <!-- Page Content -->
 
+  <!-- video section -->
   <a name="learn-more"></a>
-  <div class="content-section-b">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-sm-6">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h3 class="section-heading">Juggar allows lenders to lend their money to borrowers who pledge
-                    shares of Singapore listed companies as collateral. </br></br>
-                    This means you, as the lender, takes on less risk</h3>
+  <div class='content-section-b'>
+    <div class="row">
+      <div class="col-md-7">
+        <div class='intro-video' style="text-align: center;">
+          <!-- <h1>How Juggar Works?</h1> -->
+          <div class="col-md-10 col-md-offset-1">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h1hZCyPoINg" frameborder="0" allowfullscreen>
+              </iframe>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <img class="img-responsive" src="img/ipad.png" alt="">
+      </div>
+
+      <div class="col-md-5">
+        <div class="list-group">
+          <h1>What is Juggar?</h1>
+          <button type="button" class="list-group-item"><h4>Juggar is an innovative platform for you to lend your money like how a bank does it</h4></button>
+          <button type="button" class="list-group-item"><h4>Get higher interest rates on your money</h4>
+</button>
+          <button type="button" class="list-group-item"><h4>Your risk is limited as the total value of collateral (Singapore listed shares) is higher than the loan amount<h4>
+</button>
         </div>
       </div>
 
     </div>
-    <!-- /.container -->
-
   </div>
-  <!-- /.content-section-a -->
+  <!-- /.content-section-b -->
 
   <div class="content-section-a">
     <div class="container">
@@ -281,32 +289,43 @@
     </div>
   </div>
 
-  <div class='content-section-b'>
-    <div class="row">
-      <div class='intro-video' style="text-align: center;">
-        <h1>How Juggar Works?</h1>
-        <div class="col-md-10 col-md-offset-1">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h1hZCyPoINg" frameborder="0" allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /.content-section-b -->
-
   <a name="contact"></a>
   <div class="banner">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
           <div class="signup">
+
             <h2>Let us fill you in on the details.</h2>
             <p id="signup-success" class="text-success"></p>
             <p id="signup-error" class="text-danger"></p>
             <form class="signup-form form-inline" id="signup-form" role="form" onsubmit="return signup(this)">
 
+            <div class="">
+              <h4> I want to lend</h4>
+              <select class="form-control" name="amount">
+                <option value=1000>S$1,000 - $10,000</option>
+                <option value=10001>S$10,001 - 50,000</option>
+                <option value=50001>S$50,001 - 100,000</option>
+                <option value=100001>S$100,001 - 250,000 </option>
+                <option value=250000>Above 250,000</option>
+              </select>
+              <h4>for a</h4>
+              <select class="form-control" name="tenor">
+                <option value=1>1-month</option>
+                <option value=3>3-month</option>
+                <option value=6>6-month</option>
+                <option value=9>9-month</option>
+                <option value=12>12-month</option>
+              </select>
+              <h4>period at</h4>
+              <select class="form-control" name="rate">
+                <option value=1.5>1.5% - 2.0%</option>
+                <option value=2.0>> 2.0% - 2.5%</option>
+                <option value=2.5>>2.5% - 3.0%</option>
+                <option value=3>I need higher rates</option>
+              </select>
+            </div><br>
               <input class="form-control" style="width:70%" name="email" type="email" placeholder="Enter email" required>
               <textarea class="form-control" style="width:70%; margin-top: 20px" name="question" rows="5" placeholder="or, if you have any queries, let us answer it."></textarea>
               <button class="btn btn-large" style="background-color:#3f73e0; width: 70%; margin-top:20px;" id="signup-button" type="submit">Join Waitlist</button>
