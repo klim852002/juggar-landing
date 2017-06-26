@@ -17,6 +17,9 @@ function signup(formObj) {
   // Store emails to firebases
   var myFirebaseRef = new Firebase("https://landing-on-juggar.firebaseio.com/signups");
   myFirebaseRef.push({
+    amount: formObj.amount.value,
+    tenor: formObj.tenor.value,
+    rate: formObj.rate.value,
     email: formObj.email.value,
     question: formObj.question.value,
     timestamp: Firebase.ServerValue.TIMESTAMP
