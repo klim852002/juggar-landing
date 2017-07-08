@@ -86,6 +86,19 @@ body > div:nth-child(5) > div > div > div:nth-child(1) > h3 {
   }
 }
 
+@media screen and (max-width:768px) {
+  .list-group > h1 {
+    margin: 5% auto;
+    text-align: center;
+  }
+  .list-group-item {
+    margin: 0 auto;
+  }
+  .list-group-item > h4{
+    text-align: center;
+  }
+}
+
 .list-group-item {
   /*font: h2;*/
   margin: 0 auto;
@@ -94,7 +107,6 @@ body > div:nth-child(5) > div > div > div:nth-child(1) > h3 {
 .list-group-item:focus{
     outline: none;
   }
-
 
 .intro-header {
    position: relative;
