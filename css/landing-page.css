@@ -50,6 +50,15 @@ footer {
   }
 }
 
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 1px;
+  width: auto;
+}
+
 .navbar {
     -webkit-transition: all 0.6s ease-out !important;
     -moz-transition: all 0.6s ease-out !important;
